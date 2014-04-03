@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Kaboom intro"
+date:   2014-02-28 12:00:56
+tags: kaboom
+---
+
+## Kaboom intro :)
+
+coucou
