@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<div id="content">
+
+    <img class="img-canopolis" src="/images/Canopolis-anim.gif" />
+
+    {% assign lastUrl = site.categories["kaboom"].first.url %}
+    {% assign firstUrl = site.categories["kaboom"].last.url %}
+
+
+    {% if page.id == site.categories["kaboom"].first.id %}
+        {% assign isLast = 1 %}
+    {% endif %}
+    {% if page.id == site.categories["kaboom"].last.id %}
+        {% assign isFirst = 1 %}
+    {% endif %}
+
+    {% for post in site.categories["kaboom"] %}
+        {% if post.id == page.id %}
+            {% assign idxP = forloop.index0 | plus:1 %}
+            {% assign idxN = forloop.index0 | minus:1 %}
+            {% assign previous = site.categories["kaboom"][idxP].url %}
+            {% assign next = site.categories["kaboom"][idxN].url %}
+        {% endif %}
+
+    {% endfor %}
+<div id="content-bis">
+    <div class="bordure"></div><p id="prez">Une contre-utopie 2.0 par Célia Heinrich.<br>Retrouvez chaque semaine un épisode inédit.<br></p><div class="bordure"></div>
+
+
+    <p class="meta">{{ page.date | date: '%d' }} {% assign m = page.date | date: "%-m" %}
+            {% case m %}
+              {% when '1' %}janvier
+              {% when '2' %}février
+              {% when '3' %}mars
+              {% when '4' %}avril
+              {% when '5' %}mai
+              {% when '6' %}juin
+              {% when '7' %}juillet
+              {% when '8' %}août
+              {% when '9' %}septembre
+              {% when '10' %}octobre
+              {% when '11' %}novembre
+              {% when '12' %}décembre
+            {% endcase %} {{ page.date | date: '%Y' }}
+     </p>
+     <p>
+         <b>{{ page.type }}</b><br>
+         {% if page.indice == 1 %}
+            <b>{{ page.indice }}er</b> épisode sur <b>{{ page.personnage }}</b>
+          {% elsif page.indice >= 1 %}
+            <b>{{ page.indice }}e</b> épisode sur <b>{{ page.personnage }}</b>
+                  {% endif %}
+     </p>
+</div>
+        <h2><span id="navig-left">
+        <a {% if isFirst == 1 %} hidden {% endif %} href="{{firstUrl}}">&laquo;</a> <a {% if isFirst == 1 %} hidden {% endif %}  href="{{previous}}"> &lsaquo; </a></span>{{ page.title }} <span id="navig-right"><a {% if isLast == 1 %} hidden {% endif %} href="{{next}}"> &rsaquo;</a><a {% if isLast == 1 %} hidden {% endif %} href="{{lastUrl}}"> &raquo; </a></span></h2>
+        
+<div id="content-bis">
+        <div class="post">
+        {{ content }}
+        </div>
+    </div>
+</div>
+
