@@ -178,10 +178,12 @@ a{text-decoration: none;}
   font-size: 18px;
   text-align: center;
   color: black;
+  padding-right: 100px;
 }
 
 div.bordure {
     border-bottom:1px solid #C1C3C3;
+    width: 700px;
 }
 
 #content {
@@ -228,6 +230,7 @@ div.bordure {
   max-height: 500px;
   display: block;
   margin: 0 auto;
+  padding-right: 100px;
 }
 
 .meta {
