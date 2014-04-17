@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
+
+
 <div id="content">
 <div id="content-bis">
+<div id="cadre-post-simple"></div><br><br>
     <h2>{{ page.title }}</h2>
     <p class="meta">{{ page.date | date: '%d' }} {% assign m = page.date | date: "%-m" %}
         {% case m %}
@@ -24,5 +27,8 @@ layout: default
     <div class="post">
     {{ content }}
     </div>
+    
+<div id="cadre-post-simple"></div>
 </div>
 </div>
+

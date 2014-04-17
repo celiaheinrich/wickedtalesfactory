@@ -6,7 +6,7 @@ title: Wicked Tales Factory
 <div id="home">
 
 <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in site.categories["news"] %}
       <li>
       <div id="bloc-txt">
         <a href="{{ post.url }}">{{ post.title }}</a><br>
@@ -27,7 +27,6 @@ title: Wicked Tales Factory
             {% endcase %} {{ post.date | date: '%Y' }}
          dans <a id="categories" {% case post.categories.first %}
                                     {% when 'canopolis' %} {% assign lastUrl = site.categories["canopolis"].first.url %} href="{{lastUrl}}"
-                                    {% when 'news' %} href="/news.html"
               {% endcase %}>
               {{post.categories.first | capitalize}}</a></span><br><br>
         <img class="img-post" src={{ post.image }} />

@@ -5,23 +5,23 @@ layout: default
 
     <img class="img-canopolis" src="/images/Canopolis-anim.gif" />
 
-    {% assign lastUrl = site.categories["kaboom"].first.url %}
-    {% assign firstUrl = site.categories["kaboom"].last.url %}
+    {% assign lastUrl = site.categories["canopolis"].first.url %}
+    {% assign firstUrl = site.categories["canopolis"].last.url %}
 
 
-    {% if page.id == site.categories["kaboom"].first.id %}
+    {% if page.id == site.categories["canopolis"].first.id %}
         {% assign isLast = 1 %}
     {% endif %}
-    {% if page.id == site.categories["kaboom"].last.id %}
+    {% if page.id == site.categories["canopolis"].last.id %}
         {% assign isFirst = 1 %}
     {% endif %}
 
-    {% for post in site.categories["kaboom"] %}
+    {% for post in site.categories["canopolis"] %}
         {% if post.id == page.id %}
             {% assign idxP = forloop.index0 | plus:1 %}
             {% assign idxN = forloop.index0 | minus:1 %}
-            {% assign previous = site.categories["kaboom"][idxP].url %}
-            {% assign next = site.categories["kaboom"][idxN].url %}
+            {% assign previous = site.categories["canopolis"][idxP].url %}
+            {% assign next = site.categories["canopolis"][idxN].url %}
         {% endif %}
 
     {% endfor %}

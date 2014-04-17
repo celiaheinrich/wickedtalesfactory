@@ -50,6 +50,11 @@ a{text-decoration: none;}
   font-size: 12px;
 }
 
+#categories {
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 15px;
+  font-weight:bold;
+}
 
 .posts li {
     background: #3b3330;
@@ -235,6 +240,12 @@ div.bordure {
 
 .meta {
   color: #aaa;
+}
+
+#cadre-post-simple {
+    border-bottom:1px solid #C1C3C3;
+    width: 700px;
+    padding-top: 45px;
 }
 
 /*****************************************************************************/
