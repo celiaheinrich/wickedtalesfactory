@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="content">
-
+    <div id="inner">
     <img class="img-canopolis" src="/images/Canopolis-anim.gif" />
 
     {% assign lastUrl = site.categories["canopolis"].first.url %}
@@ -25,8 +25,8 @@ layout: default
         {% endif %}
 
     {% endfor %}
-<div id="content-bis">
-    <div class="bordure"></div><p id="prez">Une contre-utopie 2.0 par Célia Heinrich.<br>Retrouvez chaque semaine un épisode inédit.<br></p><div class="bordure"></div>
+<div class="content-bis">
+    <p id="prez">Une contre-utopie 2.0 par Célia Heinrich.<br>Retrouvez chaque semaine un épisode inédit.<br></p>
 
 
     <p class="meta">{{ page.date | date: '%d' }} {% assign m = page.date | date: "%-m" %}
@@ -57,10 +57,12 @@ layout: default
         <h2><span id="navig-left">
         <a {% if isFirst == 1 %} hidden {% endif %} href="{{firstUrl}}">&laquo;</a> <a {% if isFirst == 1 %} hidden {% endif %}  href="{{previous}}"> &lsaquo; </a></span>{{ page.title }} <span id="navig-right"><a {% if isLast == 1 %} hidden {% endif %} href="{{next}}"> &rsaquo;</a><a {% if isLast == 1 %} hidden {% endif %} href="{{lastUrl}}"> &raquo; </a></span></h2>
         
-<div id="content-bis">
+    <div class="content-bis">
         <div class="post">
         {{ content }}
         </div>
     </div>
 </div>
+</div>
+
 
