@@ -8,7 +8,8 @@ title: Wicked Tales Factory
 <ul class="posts">
     {% for post in site.posts %}
       <li>
-      <div id="bloc-txt">
+      <div id="inner">
+<div class="content-bis">
         <a href="{{ post.url }}">{{ post.title }}</a><br>
         <span>Publié le {{ post.date | date: '%d' }} {% assign m = post.date | date: "%-m" %}
             {% case m %}
@@ -33,6 +34,7 @@ title: Wicked Tales Factory
         <img class="img-post" src={{ post.image }} />
         <div id="extract">{{ post.content | strip_html | truncatewords:200 }}</div>
         <div id="more"><a href="{{ post.url }}">Lire la suite</a></div>
+      </div>
       </div>
       </li>
     {% endfor %}
