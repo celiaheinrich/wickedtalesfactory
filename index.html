@@ -31,7 +31,9 @@ title: Wicked Tales Factory
                                     {% when 'news' %} href="/news.html"
               {% endcase %}>
               {{post.categories.first | capitalize}}</a></span><br><br>
-        <img class="img-post" src={{ post.image }} />
+        {% if post.image != "" %}
+            <img class="img-post" src={{ post.image }} />
+        {% endif %}
         <div id="extract">{{ post.content | strip_html | truncatewords:200 }}</div>
         <div id="more"><a href="{{ post.url }}">Lire la suite</a></div>
       </div>

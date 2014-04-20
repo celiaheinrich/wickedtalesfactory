@@ -58,6 +58,7 @@
       padding-bottom: 30px;
       padding-right: 100px;
       color: white;
+      overflow-x: auto;
 
   }
   .posts li:nth-child(even) {
@@ -206,7 +207,7 @@
     font-size: 18px;
     text-align: center;
     color: #3b3330;
-        overflow-x: auto;
+    overflow-x: auto;
     
     /*padding-left: 460px;*/
   }
