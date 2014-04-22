@@ -116,9 +116,6 @@
     float: left;
     text-align: left;
     list-style: none;
-    /*position: fixed;
-    top: 252px;
-    left: 0;*/
     margin-top: 2px;
     text-decoration: none;
     padding: 0;
@@ -195,10 +192,6 @@
     padding: 15px 0;
   }
 
-  div.bordure {
-      border-bottom:1px solid #C1C3C3;
-      width: 700px;
-  }
 
   #content {
     padding-left: 460px;
@@ -208,20 +201,15 @@
     text-align: center;
     color: #3b3330;
     overflow-x: auto;
-    
-    /*padding-left: 460px;*/
   }
 
   #content h2{ 
       padding-top: 10px;
       font-size: 30px;
       position: relative;
-      /*padding-left: 45px;
-      padding-right: 145px;
-      text-align: center;*/
   }
   
-  #inner {
+  .inner {
     max-width: 800px;
     min-width: 300px;
     margin: 0 auto;
@@ -229,8 +217,14 @@
 
   .content-bis{
     text-align: justify;
-    /*width: 800px;
-    display: inline-block;*/
+  }
+  
+  .content-bis hr{
+    margin-top: 35px;
+     margin-bottom: 35px;
+     color: white;
+    border-top: 1px solid #C1C3BE;
+
   }
 
   #content a{ 
@@ -265,7 +259,44 @@
       width: 700px;
       padding-top: 45px;
   }
-
+  
+ .citation {
+    color: #aaa;
+    font-style: italic;
+    font-size: 11px;
+  }
+  
+  .p-alinea {
+    text-indent:15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #img-title {
+  height: 210px;
+  float: left;
+  margin: 0  0 0 15px;
+  }
+  
+    
+  #img-title-bis {
+  height: 210px;
+  float: right;
+  margin: 0 0 0 15px;
+  }
+  
+    #img-ligne {
+    max-height: 45px;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .cat-Title {
+    padding-top: 30px;
+    font-family: 'Special Elite', cursive;
+    text-transform: uppercase;
+  }
+  
   /*****************************************************************************/
   /*
   /* Posts

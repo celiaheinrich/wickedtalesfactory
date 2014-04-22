@@ -8,7 +8,7 @@ title: Wicked Tales Factory
 <ul class="posts">
     {% for post in site.posts %}
       <li>
-      <div id="inner">
+      <div class="inner">
 <div class="content-bis">
         <a href="{{ post.url }}">{{ post.title }}</a><br>
         <span>Publié le {{ post.date | date: '%d' }} {% assign m = post.date | date: "%-m" %}
@@ -29,6 +29,7 @@ title: Wicked Tales Factory
          dans <a id="categories" {% case post.categories.first %}
                                     {% when 'canopolis' %} {% assign lastUrl = site.categories["canopolis"].first.url %} href="{{lastUrl}}"
                                     {% when 'news' %} href="/news.html"
+                                    {% when 'gamedesign' %} href="/gd.html"
               {% endcase %}>
               {{post.categories.first | capitalize}}</a></span><br><br>
         {% if post.image %}

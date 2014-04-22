@@ -1,0 +1,56 @@
+---
+layout: default
+title: Wicked Tales Factory
+---
+
+<div id="content">
+    <div class="inner">
+        <img id="img-title-bis" src="/images/GD-Blue-Fairy.png" />
+            <div class="cat-Title"><h2>Game Design</h2> </div>
+        <div class="content-bis">
+        <p>Retrouvez dans cette rubrique, tous les posts concernant le Game Design : le récit de mes galères, ainsi que mes astuces lors de la réalisation de mon conte interactif cruel et stupide.</p>
+        </div>
+    </div>
+</div>
+<div id="home">
+    <ul class="posts">
+        {% for post in site.categories["gamedesign"] %}
+          <li>
+          <div class="inner">
+            <div class="content-bis">
+            <a href="{{ post.url }}">{{ post.title }}</a><br>
+            <span>Publié le {{ post.date | date: '%d' }} {% assign m = post.date | date: "%-m" %}
+                {% case m %}
+                  {% when '1' %}janvier
+                  {% when '2' %}février
+                  {% when '3' %}mars
+                  {% when '4' %}avril
+                  {% when '5' %}mai
+                  {% when '6' %}juin
+                  {% when '7' %}juillet
+                  {% when '8' %}août
+                  {% when '9' %}septembre
+                  {% when '10' %}octobre
+                  {% when '11' %}novembre
+                  {% when '12' %}décembre
+                {% endcase %} {{ post.date | date: '%Y' }}
+             dans <a id="categories" {% case post.categories.first %}
+                                        {% when 'canopolis' %} {% assign lastUrl = site.categories["canopolis"].first.url %} href="{{lastUrl}}"
+                                        {% when 'news' %} href="/news.html"
+                                        {% when 'gamedesign' %} href="/gd.html"
+                  {% endcase %}>
+                  {{post.categories.first | capitalize}}</a></span><br><br>
+            {% if post.image %}
+                <img class="img-post" src={{ post.image }} />
+            {% endif %}
+            <div id="extract">{{ post.content | strip_html | truncatewords:200 }}</div>
+            <div id="more"><a href="{{ post.url }}">Lire la suite</a></div>
+          </div>
+          </div>
+          </li>
+        {% endfor %}
+    </ul>
+
+
+</div>
+
