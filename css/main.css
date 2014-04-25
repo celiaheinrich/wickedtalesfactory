@@ -20,11 +20,9 @@
     color: #3b3330;
 
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 100%; }
-
-  h1 { margin-bottom: 1em; }
+  h1 {
+    font-size: 32px;
+  }
   p { margin: 1em 0; }
 
   a{text-decoration: none;}
@@ -69,8 +67,8 @@
 
   .posts li a {
       text-decoration: none;
-      font-family: 'Lustria', cursive;
-      font-size: 35px;
+      font-family: 'Roboto', cursive;
+      font-size: 30px;
       color: white;
   }
 
@@ -207,6 +205,8 @@
       padding-top: 10px;
       font-size: 30px;
       position: relative;
+      font-family: 'Roboto', cursive;
+      font-weight: normal;
   }
   
   .inner {
@@ -235,11 +235,13 @@
   #navig-left { 
       left: 0;
       position: absolute;
+      font-size: 32px;
       
   }
   #navig-right { 
       right: 0;
       position: absolute;
+      font-size: 32px;
   }
 
   .img-canopolis{
