@@ -6,4 +6,4 @@ tags: kaboom
 categories: "GameDesign"
 ---
 
-Pour bien commence, il faut une super idée.
+Pour bien commencer, il faut une super idée.
