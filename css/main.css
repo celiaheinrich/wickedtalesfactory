@@ -68,9 +68,10 @@
 
   .posts li a {
       text-decoration: none;
-      font-family: 'Roboto', cursive;
-      font-size: 30px;
+      font-family: 'Open Sans Condensed', 'sans-serif';
+      font-size: 32px;
       color: white;
+      font-weight: normal;
   }
 
   .posts li:nth-child(even) a {
@@ -87,6 +88,7 @@
     max-height: 700px;
     display: block;
     margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   #more{
@@ -204,9 +206,9 @@
 
   #content h2{ 
       padding-top: 10px;
-      font-size: 30px;
       position: relative;
-      font-family: 'Roboto', cursive;
+      font-family: 'Open Sans Condensed', 'sans-serif';
+      font-size: 32px;
       font-weight: normal;
   }
   
@@ -236,13 +238,13 @@
   #navig-left { 
       left: 0;
       position: absolute;
-      font-size: 32px;
+      font-size: 34px;
       
   }
   #navig-right { 
       right: 0;
       position: absolute;
-      font-size: 32px;
+      font-size: 34px;
   }
 
   .img-canopolis{
