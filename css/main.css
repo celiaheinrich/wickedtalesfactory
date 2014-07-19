@@ -192,6 +192,12 @@
     border-bottom: 1px solid #C1C3BE;
     padding: 15px 0;
   }
+  
+  #boutiques {
+      text-align: center;
+     padding: 25px 0;
+     margin-bottom: 30px;
+  }
 
 
   #content {
@@ -254,6 +260,18 @@
     margin: 0 auto;
     /*padding-right: 100px;*/
   }
+  
+  .img-conte {
+    max-width: 500px;
+    max-height: 500px;
+    float: right;
+
+  }
+  
+  .logo {
+    max-width: 125px;
+    max-height: 125px;
+  }
 
   .meta {
     color: #aaa;
@@ -266,9 +284,10 @@
   }
   
  .citation {
-    color: #aaa;
+    color: #585858;
     font-style: italic;
-    font-size: 11px;
+    font-size: 12px;
+    margin-bottom: 20px;
   }
   
   .p-alinea {
@@ -301,6 +320,36 @@
     font-family: 'Special Elite', cursive;
     text-transform: uppercase;
   }
+  
+  #content .titres li a {
+    color: #3b3330;
+      text-align: left;
+  }
+  #content .titres li a:hover {
+    color: #9B826A;
+  }
+  
+  .titres {
+  border: 2px dashed rgba(0,0,0,0);
+  border-radius: 0 0px 0px 0px;
+  padding: 15px 0;
+  margin-top: 25px;
+  text-align: center;
+
+  }
+  
+  .titres li {
+  list-style: none;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  font-size: 18px;
+  font-weight:bold;
+  text-align: center;
+}
+
   
   /*****************************************************************************/
   /*
