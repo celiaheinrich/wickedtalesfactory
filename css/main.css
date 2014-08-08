@@ -68,9 +68,12 @@
 
   .posts li a {
       text-decoration: none;
+      color: white;
+  }
+  
+  .posts li .titre-post {
       font-family: 'Open Sans Condensed', 'sans-serif';
       font-size: 32px;
-      color: white;
       font-weight: normal;
   }
 
@@ -78,7 +81,7 @@
       color: #3b3330;
   }
 
-  #extract {
+  .extract {
       font-family: 'Lustria', cursive;
       font-size: 18px;
   }
@@ -180,6 +183,11 @@
       color: #666;
       font-family: 'Voltaire', cursive;
   }
+  
+  .contact a {
+    text-decoration: none;
+    color: #A4A4A4;
+  }
 
 
   #prez {
@@ -262,15 +270,38 @@
   }
   
   .img-conte {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     float: right;
 
+  }
+  
+  .separation {
+      text-align: center;
+  }
+  
+  .img-sep-para {
+    max-width: 50px;
+    max-height: 50px;
+
+    margin: 45px 0 35px 0;
   }
   
   .logo {
     max-width: 125px;
     max-height: 125px;
+  }
+  
+  #content .epubGreen {
+    color: #85b916;
+    font-weight:bold;
+    
+  }
+  
+  #content .kf8Orange {
+    color: #fcaa3c;
+    font-weight:bold;
+    
   }
 
   .meta {
@@ -334,6 +365,7 @@
   border-radius: 0 0px 0px 0px;
   padding: 15px 0;
   margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
 
   }
@@ -350,7 +382,25 @@
   text-align: center;
 }
 
-  
+.pagination {
+    padding-left: 460px;
+    padding-right: 100px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.previous {
+    float: left;
+    color: #3b3330;
+        font-family: 'Open Sans Condensed', cursive;
+}
+
+.next {
+    float:right;
+    color: #3b3330;
+        font-family: 'Open Sans Condensed', cursive;
+}
+
   /*****************************************************************************/
   /*
   /* Posts
@@ -360,4 +410,14 @@
       padding-top: 0;
       padding-bottom: 30px;
       /*padding-right: 100px;*/
+  }
+  
+  .post p {
+    text-indent: 30px;
+    margin: 5px;
+  }
+  
+  .posts p {
+    text-indent: 30px;
+    margin: 5px;
   }

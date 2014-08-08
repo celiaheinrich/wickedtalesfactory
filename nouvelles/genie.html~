@@ -1,0 +1,29 @@
+---
+layout: default
+title: Wicked Tales Factory
+---
+
+<div id="content">
+<div class="inner">
+    <div class="cat-Title"><h1>Un éclair de génie</h1></div>
+<div class="content-bis">
+    <p>Une nouvelle steampunk conçue dans le cadre d'un challenge littéraire, vingt-quatre heures pour écrire une nouvelle qui répondait à certaines contraintes.</p>
+    <p><i>Rodolphe est un inventeur de génie, ou presque… Il vient d'avoir une nouvelle idée à présenter à l'Inventorium, le grand congrès annuel des inventeurs…</i></p>
+    <p>Disponible gratuitement. Liens de téléchargement ci-dessous :</p>
+    <div id="boutiques"><a class="epubGreen" href="/fichiers/Routine - Celia Heinrich.epub">epub</a>
+       <a class="kf8Orange" href="/fichiers/Routine - Celia Heinrich.azw3">azw3</a> </div>
+    
+    <img class="img-conte" src="/images/Machine.png" />
+    <p><b>Infos ebook :</b><br/>
+        <i><u>Genre :</u> steampunk</i><br/>
+        <i><u>Nombre de caractères :</u> ~ 18000 (espaces comprises)</i><br/>
+        <i><u>ISBN epub :</u> 979-10-93923-10-9</i><br/>
+        <i><u>ISBN azw3 :</u> 979-10-93923-11-6</i>
+    </p>
+    
+    </div>
+    
+</div>
+
+</div>
+
