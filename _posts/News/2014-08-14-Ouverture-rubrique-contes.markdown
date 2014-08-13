@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ouverture de la rubrique Contes cruels et stupides"
-date:   2014-08-11 10:00:20
+date:   2014-08-14 00:00:05
 categories: News
 image: /images/Meduses-volantes-bis-2.png
 ---

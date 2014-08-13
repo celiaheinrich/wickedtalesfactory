@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bienvenue sur Wicked Tales Factory !"
-date:   2014-08-11 09:58:00
+date:   2014-08-14 00:00:20
 categories: News
 image: /images/Logo-avec-contour.png
 ---

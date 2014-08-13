@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ouverture de la rubrique Romans"
-date:   2014-08-11 10:00:00
+date:   2014-08-14 00:00:00
 categories: News
 image: /images/Couverture-Tome-1-Summer-Nights-ter-2.png
 ---
