@@ -3,3 +3,7 @@ markdown: redcarpet
 pygments: true
 paginate: 10
 paginate_path: "/page:num"
+url: http://www.wickedtalesfactory.fr
+author: Célia Heinrich
+rss_post_limit: 10
+
