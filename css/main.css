@@ -87,7 +87,7 @@
   }
 
   .img-post{
-    max-width: 700px;
+    max-width: 87%;
     max-height: 700px;
     display: block;
     margin: 0 auto;
@@ -95,7 +95,7 @@
   }
   
     .img-ca{
-    max-width: 800px;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -269,7 +269,7 @@
   }
 
   .img-canopolis{
-    max-width: 500px;
+    max-width: 62.5%;
     max-height: 500px;
     display: block;
     margin: 0 auto;
