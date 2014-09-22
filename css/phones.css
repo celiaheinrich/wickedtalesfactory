@@ -418,7 +418,11 @@
 .next {
     float:right;
     color: #3b3330;
-        font-family: 'Open Sans Condensed', cursive;
+    font-family: 'Open Sans Condensed', cursive;
+}
+
+.terminal-text {
+    font-family: 'Courier New', monospace;
 }
 
   /*****************************************************************************/
