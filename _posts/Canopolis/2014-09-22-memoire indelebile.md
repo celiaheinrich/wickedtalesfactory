@@ -1,7 +1,7 @@
 ---
 layout: post-kaboom
 title:  "Mémoire indélébile"
-date:   2014-09-15 10:10:00
+date:   2014-09-22 10:10:00
 tags: kaboom
 categories: Canopolis
 image: /images/Hide-regles.png
