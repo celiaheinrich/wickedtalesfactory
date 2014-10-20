@@ -135,7 +135,7 @@ Hope ouvrit de grands yeux. Elle ne savait que répondre. Le comportement de cet
 
 –&nbsp;J'aurais pas hésité à ta place. Ça aurait été bien rigolo une baston sur le plateau. On en aurait parlé pendant des semaines&nbsp;!
 
-Il se mit à rire et manqua de tomber. Un autre homme se rapprocha lentement de lui et le maintint en tenant ferment son coude et son épaule droites. Comme l'homme saoul, il portait des vêtements brillants, mais il était visiblement plus sobre. Quand il eut capté l'attention de son ami, il plaça un doigt devant sa bouche puis montra du même doigt son e-brain. L'autre râla mais accepta la remarque. Presque porté par l'autre, il alla retrouver sa place.
+Il se mit à rire et manqua de tomber. Un autre homme se rapprocha lentement de lui et le maintint en tenant fermement son coude et son épaule droites. Comme l'homme saoul, il portait des vêtements brillants, mais il était visiblement plus sobre. Quand il eut capté l'attention de son ami, il plaça un doigt devant sa bouche puis montra du même doigt son e-brain. L'autre râla mais accepta la remarque. Presque porté par l'autre, il alla retrouver sa place.
 
 Elle ne connecterait pas son e-brain pour vérifier, mais la tirade de l'homme avait dû lui coûter très cher en termes de points de convenance. Ivresse, interpellation brutale d'une inconnue (pire, d'une paria), expression publique d'opinion douteuse, incitation à la violence. Plus le score initial était élevé plus la perte de points liée à une action non convenable était grande. Mais même si l'homme était coutumier de ce genre de comportement, cette prise de parole avait dû sérieusement entamer son capital de points.
 
