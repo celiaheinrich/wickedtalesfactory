@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Info-pub"
+date:   2015-01-19 00:10:00
+categories: News
+---
+
+<img class = "img-ca" src=/images/wtf-bd1.png />

@@ -26,8 +26,8 @@ comments: true
         {% endcase %} {{ page.date | date: '%Y' }}</p>
 
 
-{% if post.image %}
-            <img class="img-post" src={{ post.image }} />
+{% if page.image %}
+            <img class="img-post" src={{ page.image }} />
 {% endif %}
     {{ content }}
    
