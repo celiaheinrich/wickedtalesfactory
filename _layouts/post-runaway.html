@@ -1,0 +1,80 @@
+---
+layout: default
+comments: true
+---
+<div id="content">
+    <div class="inner">
+    <img class="img-canopolis" src="/images/RunawayRobots/Runaway-Robots-title.png" />
+
+    {% assign lastUrl = site.categories["runawayrobots"].first.url %}
+    {% assign firstUrl = site.categories["runawayrobots"].last.url %}
+
+
+    {% if page.id == site.categories["runawayrobots"].first.id %}
+        {% assign isLast = 1 %}
+    {% endif %}
+    {% if page.id == site.categories["runawayrobots"].last.id %}
+        {% assign isFirst = 1 %}
+    {% endif %}
+
+    {% for post in site.categories["runawayrobots"] %}
+        {% if post.id == page.id %}
+            {% assign idxP = forloop.index0 | plus:1 %}
+            {% assign idxN = forloop.index0 | minus:1 %}
+            {% assign previous = site.categories["runawayrobots"][idxP].url %}
+            {% assign next = site.categories["runawayrobots"][idxN].url %}
+        {% endif %}
+
+    {% endfor %}
+<div class="content-bis">
+
+
+    <p class="meta titlerunaway" id="titrepostRunaway" >{{ page.date | date: '%d' }} {% assign m = page.date | date: "%-m" %}
+            {% case m %}
+              {% when '1' %}janvier
+              {% when '2' %}février
+              {% when '3' %}mars
+              {% when '4' %}avril
+              {% when '5' %}mai
+              {% when '6' %}juin
+              {% when '7' %}juillet
+              {% when '8' %}août
+              {% when '9' %}septembre
+              {% when '10' %}octobre
+              {% when '11' %}novembre
+              {% when '12' %}décembre
+            {% endcase %} {{ page.date | date: '%Y' }}
+     </p>
+</div>
+        <h2><span id="navig-left" class="titlerunaway">
+        <a {% if isFirst == 1 %} hidden {% endif %} href="{{firstUrl}}#titrepostRunaway">&laquo;</a> <a {% if isFirst == 1 %} hidden {% endif %}  href="{{previous}}#titrepostRunaway"> &lsaquo; </a></span><span class="titlerunaway"> {{ page.title }} </span><span id="navig-right" class="titlerunaway"><a {% if isLast == 1 %} hidden {% endif %} href="{{next}}#titrepostRunaway"> &rsaquo;</a><a {% if isLast == 1 %} hidden {% endif %} href="{{lastUrl}}#titrepostRunaway"> &raquo; </a></span></h2><br />
+        
+    <div class="content-bis">
+        <div class="post">
+        {{ content }}
+        
+           <br /><br /><br />
+   
+    {% if page.comments %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'wickedtalesfactory'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+    {% endif %}
+        </div>
+    </div>
+</div>
+</div>
+
+

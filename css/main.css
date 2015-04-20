@@ -141,9 +141,9 @@
   }
 
   .menu li{
-      margin: 20px 40px;
+      margin: 15px 40px;
       font-family: 'Pathway Gothic One', cursive;
-      font-size: 25px;
+      font-size: 23px;
       padding: 0;
   }
 
@@ -193,6 +193,7 @@
       bottom: 0;
       left: 25px;
       color: #666;
+      font-size: 16px;
       font-family: 'Voltaire', cursive;
   }
   
@@ -415,6 +416,10 @@
 
 .terminal-text {
     font-family: 'Courier New', monospace;
+}
+
+.titlerunaway {
+    font-family: 'Bangers', cursive;
 }
 
 

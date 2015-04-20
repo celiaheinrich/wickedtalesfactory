@@ -28,6 +28,7 @@ title: Wicked Tales Factory
             {% endcase %} {{ post.date | date: '%Y' }}
          dans <a id="categories" {% case post.categories.first %}
                                     {% when 'canopolis' %} {% assign lastUrl = site.categories["canopolis"].first.url %} href="{{lastUrl}}"
+                                    {% when 'runawayrobots' %} {% assign lastUrlRR = site.categories["runawayrobots"].first.url %} href="{{lastUrlRR}}"
                                     {% when 'news' %} href="/news.html"
                                     {% when 'gamedesign' %} href="/gd.html"
               {% endcase %}>
